@@ -2,7 +2,7 @@
 pragma solidity >=0.5.0;
 
 contract Decentragram {
-  string public name = "Decentragram";
+  string public name;
   uint public imageCount = 0;
   mapping(uint => Image) public images;
 
@@ -67,5 +67,4 @@ contract Decentragram {
     // Trigger an event
     emit ImageTipped(_id, _image.hash, _image.description, _image.tipAmount, _author);
   }
-}
 }
